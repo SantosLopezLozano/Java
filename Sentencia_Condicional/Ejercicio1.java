@@ -11,7 +11,7 @@ public class Ejercicio1 {
     System.out.print("Diga un día de la semana: ");
     dia = (System.console().readLine());
     
-    switch(dia) {
+    switch (dia.toLowerCase() ){
       case "lunes":
         System.out.println( "Entornos de desarrollo");
         break;

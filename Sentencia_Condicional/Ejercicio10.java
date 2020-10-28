@@ -8,10 +8,10 @@ public class Ejercicio10 {
     String mes;
 
     System.out.print("su mes de nacimiento: ");
-    mes = (System.console().readLine());
+    mes = (System.console().readLine().toLowerCase());
     
     System.out.print("su día de nacimiento: ");
-    int dia = Integer.parseInt(System.console().readLine().toLowerCase());
+    int dia = Integer.parseInt(System.console().readLine());
     
     switch (mes) {
       case "enero":

@@ -2,12 +2,12 @@ import java.util.Scanner;
 /**
  *Santos López Lozano
  */
-public class Ejercicio8 {
+public class Ejercicio9 {
   public static void main(String[] args) {
     
     Scanner s = new Scanner(System.in);
     
-    System.out.print("¿De qué número quiere saber la tabla de mutiplicar?");
+    System.out.print("Introduzca un número");
     int entrada = s.nextInt();
     
     int i;

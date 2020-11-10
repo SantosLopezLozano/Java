@@ -7,13 +7,16 @@ public class Ejercicio9 {
     
     Scanner s = new Scanner(System.in);
     
-    System.out.print("Introduzca un número");
-    int entrada = s.nextInt();
+    int numeroDeDigitos = 1;
     
-    int i;
-    for(i = 1; i <= 10; i++) {
-    System.out.println(i * entrada);
+    System.out.println("Introduzca un número para que calcule cuántos dígitos tiene");
+    int entrada = s.nextInt();
+    System.out.println();
+    
+    while (entrada > 10){
+      entrada /= 10;
+      numeroDeDigitos++;
     }
+    System.out.println(numeroDeDigitos);
   }
-  
 }

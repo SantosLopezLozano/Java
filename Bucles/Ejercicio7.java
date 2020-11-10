@@ -1,33 +1,34 @@
+import java.util.Scanner;
+
 /**
  * Santos López Lozano
  */
 public class Ejercicio7 {
-
   public static void main(String[] args) {
     
-    int intentos = 4;
-    int numeroIntroducido;
-    boolean acertado = false;
+    Scanner s = new Scanner(System.in);
     
+    String clave = "7777";
+    int intentos = 4;
     do {
-      System.out.print("Introduzca la clave de 4 dígitos: ");
-      numeroIntroducido = Integer.parseInt(System.console().readLine());
       
-      if (numeroIntroducido == 8888) {
-        acertado = true;
+      System.out.println("Introduzca 4 dígitos.");
+      String entrada = s.next();
+      
+      if(!entrada.equals(clave)) {
+        
+        intentos--;
+        System.out.println("Error, vuelva a intentarlo.");
+        System.out.println("Tienes " + (intentos) + " intentos.\n");
+        
       } else {
-        System.out.println("Clave incorrecta");
+        
+        System.out.println("Clave correcta.");
+        intentos = 0;
+        
       }
       
-      intentos--;
-  
-    } while((intentos > 0) && (!acertado));
-    
-    if (acertado) {
-      System.out.println("Ha abierto la caja fuerte.");
-    } else {
-      System.out.println("Lo siento, ha agotado las 4 oportunidades.");
-    }
+    } while (intentos > 0 && intentos <= 4);
   }
 }
 

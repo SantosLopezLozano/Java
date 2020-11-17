@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- *Santos López Lozano
+ *Santos López Lozan
  */
 public class Ejercicio10 {
   public static void main(String[] args) {

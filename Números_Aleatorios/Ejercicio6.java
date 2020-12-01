@@ -18,12 +18,12 @@ public class Ejercicio6 {
 
       if ( (numeroIntroducido > numeroMisterioso) && (intentos > 0) ){
         System.out.println("el número es menor");
-        System.out.println("Te quedan " + intentos + " oportunidades.");
+        System.out.println("Te quedan " + intentos + " intentos.");
       }
       
       if ( (numeroIntroducido < numeroMisterioso) && (intentos > 0) ){
         System.out.println("el número es mayor");
-        System.out.println("Te quedan " + intentos + " oportunidades.");
+        System.out.println("Te quedan " + intentos + " intentos.");
       }
       
       if (numeroIntroducido == numeroMisterioso) {

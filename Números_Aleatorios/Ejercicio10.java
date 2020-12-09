@@ -1,20 +1,48 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
 
 /**
- *
- * @author alumno
+ * Santos López Lozano
  */
 public class Ejercicio10 {
 
-  /**
-   * @param args the command line arguments
-   */
   public static void main(String[] args) {
-    // TODO code application logic here
+    
+    int r;
+    int longitud;
+    String relleno = "";
+    
+    for(int i = 1; i <= 10; i++) {
+      
+      longitud = (int)(Math.random() * 40) + 1;
+      r = (int)(Math.random() * 6);
+      
+      switch(r) {
+        case 0:
+          relleno = "*";
+          break;
+        case 1:
+          relleno = "-";
+          break;
+        case 2:
+          relleno = "=";
+          break;
+        case 3:
+          relleno = ".";
+          break;
+        case 4:
+          relleno = "|";
+          break;
+        case 5:
+          relleno = "@";
+          break;
+        default:
+      }
+      
+      
+      for(int j = 1; j <= longitud; j++) {
+        System.out.print(relleno);
+      }
+      System.out.println();
+    }
   }
-  
 }

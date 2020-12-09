@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Santos López Lozano
  */
-public class Ejercicio7 {
+public class Ejercicio8 {
   public static void main(String[] args) {
     
     Scanner s = new Scanner(System.in);
@@ -15,16 +15,19 @@ public class Ejercicio7 {
       System.out.printf("%4d. |" , fila);
       
       for (int apuesta = 1; apuesta <= columnas; apuesta++){
-        resultadoDeLaCarrera = (int)(Math.random() * 3) + 1;
+        resultadoDeLaCarrera = (int)(Math.random() * 6) + 1;
         switch(resultadoDeLaCarrera) {
           case 1:
+          case 2:
+          case 3:
             System.out.print("1  |");
             break;
-          case 2:
-            System.out.print("  2|");
-            break;
-          case 3:
+          case 4:
+          case 5:
             System.out.print(" X |");
+            break;
+          case 6:
+            System.out.print("  2|");
           default:
           }
         }
@@ -40,5 +43,3 @@ public class Ejercicio7 {
     System.out.print(goles < 3 ? goles : "M ");
   }
 }
-
-

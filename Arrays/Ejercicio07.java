@@ -11,7 +11,7 @@ public class Ejercicio07 {
       num[i] = (int) (Math.random()*21);
       System.out.print(num[i]+" ");
     }
-    System.out.println("  ");
+    System.out.println(" ");
     System.out.print("primer valor: ");
     int valor1 = Integer.parseInt(s.nextLine());
     System.out.print("segundo valor: ");
@@ -19,8 +19,6 @@ public class Ejercicio07 {
     for (int i = 0; i < 100; i++) {
       if(num[i]== valor1){
         System.out.print("'"+valor2+"' ");
-      }else if(num[i]== valor2){
-        System.out.print("'"+valor1+"' ");
       }else{
         System.out.print(num[i]+" ");
       }

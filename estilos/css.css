@@ -1,0 +1,315 @@
+/****** Página de Estilos *********/
+
+
+
+body {background-image:url('../imagenes/patron.png') ;}
+
+/***** La flechita ****/
+.fa-arrow-up {position:fixed;
+  bottom:30px;
+  right:30px;
+  color: rgba(17, 4, 4, 0.5);
+  padding:10px;
+  border-radius:5px;
+  border:1px solid rgba(17, 4, 4, 0.5);
+  z-index:99;}
+
+
+  a {text-decoration:none;
+    color:rgb(255, 255, 255);
+    font-weight:bold;}
+ a:hover {color:rgb(0, 0, 0);}
+ 
+ button {cursor:pointer;
+         }
+ button:hover {}
+
+
+
+/*******  Pa' que sea responsive *************/
+   .iframe-responsive {position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */}
+.iframe-content {position: absolute;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ width: 90%;
+ height: 100%;
+
+}
+
+
+/****** La barra de Navegación *********/
+/* Add a black background color to the top navigation */
+nav {position:sticky;
+  position:-webkit-sticky;
+  top:0;
+  z-index:99;}
+
+.topnav {
+    background-color: rgb(87, 87, 87);
+    overflow: hidden;
+    border-radius: 9px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(146, 136, 136);
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  /**** botón destacado que marca en que sección estoy
+        como no tenemos el js que cambia al hacer scroll
+        lo desactivamos 
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  ****/
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 850px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 850px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+
+
+  /****** HERO SECTION ************/            
+
+#hero {position:relative;
+  background-image:url('../imagenes/hero.png');
+  background-size: cover;
+  background-position: right;
+  height: 90vh;
+  }
+
+#hero h2 {position:absolute;
+     top:20px;
+     right:30%;
+     color:white;
+     font-family:rotulo;
+     font-size:2.5em;
+     text-shadow:1px 1px 1px navy;
+     background-color:rgba(128, 128, 128, 0.5);
+     padding:15px;
+     border-radius:10px 50px 10px 50px;
+     }
+
+
+/******** Introducción ************/
+
+#intro h1 { width:60%;
+  color: #ffffff;
+  margin:40px auto;
+  text-align:center;
+  font-size:1.5em;
+  line-height: 40px;
+  padding-bottom:10px;
+  border-bottom:2px solid rgb(255, 94, 0);}
+
+#intro p { width:60%;
+  color: #ffffff;
+  margin:20px auto;
+  text-align:justify;
+  font-size:1.5em;
+  line-height: 40px;
+  padding-bottom:20px;
+  border-bottom:2px solid rgb(255, 94, 0);}
+
+.grid2col {display:grid;  /* propiedad de estilo para distribución grid */
+    grid-template-columns:50% 50%;
+}
+.col2 {
+padding:10%;}
+
+  /********* TIPOS *************/
+
+.tipos {
+  color: #ffffff;
+  column-count:2;
+  margin: 60px;
+  padding: 60px;
+  font-size: 1.5em;
+  background-color: gray;
+  border-radius: 10px 50px 10px 50px;
+}
+
+
+  /********* Funcionamiento *************/
+
+#funcionamiento h1 { width:60%;
+  color: #ffffff;
+  margin:40px auto;
+  text-align:center;
+  font-size:1.5em;
+  line-height: 40px;
+  padding-bottom:10px;
+  border-bottom:2px solid rgb(255, 94, 0);}
+
+#funcionamiento p { width:60%;
+  color: #ffffff;
+  margin:20px auto;
+  text-align:justify;
+  font-size:1.5em;
+  line-height: 40px;
+  padding-bottom:20px;
+  border-bottom:2px solid rgb(255, 94, 0);}
+
+
+/******** Instalación ***********/
+#instalacion {background-color: rgb(99, 96, 96);
+  padding:30px;}
+#instalacion p {font-size:1.2em;
+    text-align:justify;
+    line-height:35px;
+}
+
+#instalar {width:50%;
+  float:left;
+  margin-right:20px;
+  margin-bottom:20px;
+  text-align:left;}
+
+
+
+
+/******** Marcas ***********/
+.marcas {display:grid;
+    grid-template-columns:auto auto auto auto ;
+}
+
+.marcas a {
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.col4 {padding:15px;
+margin:10px;
+background-color:rgb(87, 87, 87);
+border:1px solid grey;
+border-radius:10px;
+box-shadow:2px 2px 2px grey;
+transition:0.5s;}
+.col4:hover {box-shadow:2px 4px 8px rgb(255, 255, 255);}
+
+.col4 img {width:100%;
+    opacity:0.4;
+    transition:1s;}
+.col4 img:hover {opacity:1;}
+
+
+
+
+  /********* FOOTER *************/
+footer {padding:20px;
+  background-color:rgb(90, 94, 90) ;
+  border-radius: 15px;}
+
+  .redes {padding:1%;
+    text-align: center;
+       }
+
+
+footer .fa {
+ padding: 10px;
+ font-size: 20px;
+ width: 30px;
+ text-align: center;
+ text-decoration: none;
+ margin: 5px 2px;
+}
+
+.fa:hover {
+   opacity: 0.7;
+}
+
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+}
+
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+}
+
+.fa-google {
+ background: #dd4b39;
+ color: white;
+}
+
+.fa-linkedin {
+ background: #007bb5;
+ color: white;
+}
+
+.fa-youtube {
+ background: #bb0000;
+ color: white;
+}
+
+.fa-instagram {
+ background: #125688;
+ color: white;
+}
+
+
+
+
+
+
+  /******* Responsividad para los diferentes dispositivos***********/ 
+
+@media only screen and (max-width:900px){  
+  .marcas {grid-template-columns: 50% 50%;}
+}
+@media only screen and (max-width:600px){
+  #container {width:100%;}
+  #instalar {width:100%;}
+  #intro p {text-align:left;
+            width:80%;}
+  .marcas {grid-template-columns: 100%;}
+}

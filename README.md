@@ -15,3 +15,9 @@ Java exercises of programming subject.
 
 6.Random Numbers
 
+7.Arrays
+
+8.Funciones
+
+9.Programacion Orientada a Objetos
+

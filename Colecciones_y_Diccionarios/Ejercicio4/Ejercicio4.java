@@ -1,4 +1,4 @@
-package ejercicio4;
+package Ejercicio4;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,7 +10,7 @@ public class Ejercicio4 {
     
     Scanner scan = new Scanner(System.in);
     
-    ArrayList<String> listaDeNombres= new ArrayList<String>();
+    ArrayList<String> listaDeNombres= new ArrayList<>();
     
     System.out.println("Escribe 10 palabras: ");
     
